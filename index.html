@@ -12,7 +12,7 @@
             margin: 20px;
             background-color: #f4f4f4;
             color: #333;
-            font-size: 18px;
+            font-size: 24px;
             line-height: 1.6;
             user-select: none;
         }
@@ -20,7 +20,7 @@
         .container {
             background-color: #fff;
             padding: 30px;
-            max-width: 1200px;
+            max-width: 1600px;
             margin: auto;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -115,7 +115,8 @@
 
     <div class="container">
         <h1>Swaraj Mishra</h1>
-        <h4 style="text-align: center;">Engineering Student | Android Developer | Java & Kotlin Programmer | Cloud Enthusiast</h4>
+        <h4 style="text-align: center;">Engineering Student | Android Developer | Java & Kotlin Programmer | Cloud
+            Enthusiast</h4>
         <p style="text-align: center;">
             <a href="https://www.linkedin.com/in/mswaraj46/" target="_blank">LinkedIn Profile</a>
         </p>
@@ -133,7 +134,10 @@
 
         <h4>Professional Summary</h4>
         <p>
-            I am a dedicated Computer Science and Engineering student at Silicon Institute of Technology, Bhubaneswar, with a CGPA of 9.72. Proficient in Python, Kotlin, Java, and Android development, with hands-on experience in cloud computing. Passionate about applying my technical skills to solve real-world problems and seeking opportunities to contribute in dynamic professional environments.
+            I am a dedicated Computer Science and Engineering student at Silicon Institute of Technology, Bhubaneswar,
+            with a CGPA of 9.72. Proficient in Python, Kotlin, Java, and Android development, with hands-on experience
+            in cloud computing. Passionate about applying my technical skills to solve real-world problems and seeking
+            opportunities to contribute in dynamic professional environments.
         </p>
 
         <h4>Education</h4>
@@ -186,7 +190,8 @@
                 <strong>Android Development Intern</strong><br>
                 Ingenious-tech, June 2024 - August 2024, Bhubaneswar<br>
                 <ul>
-                    <li>Developed Android applications using Kotlin with features such as API integration and user authentication.</li>
+                    <li>Developed Android applications using Kotlin with features such as API integration and user
+                        authentication.</li>
                     <li>Worked on UI/UX designs and optimized app performance.</li>
                 </ul>
             </li>
@@ -201,10 +206,14 @@
 
         <h4>Projects</h4>
         <ul>
-            <li><strong>Predictive Analytics for Urban Climate Resilience:</strong> Developed ML models to estimate climate impacts and proposed strategies to enhance resilience.</li>
-            <li><strong>E-Commerce App:</strong> Designed and implemented a full-featured e-commerce app with product management, profile updates, and user registration.</li>
-            <li><strong>ATM Interface Simulation:</strong> Created an ATM interface simulation with transaction management and account features.</li>
-            <li><strong>AWS Web Infrastructure:</strong> Built a secure, scalable web infrastructure using AWS services.</li>
+            <li><strong>Predictive Analytics for Urban Climate Resilience:</strong> Developed ML models to estimate
+                climate impacts and proposed strategies to enhance resilience.</li>
+            <li><strong>E-Commerce App:</strong> Designed and implemented a full-featured e-commerce app with product
+                management, profile updates, and user registration.</li>
+            <li><strong>ATM Interface Simulation:</strong> Created an ATM interface simulation with transaction
+                management and account features.</li>
+            <li><strong>AWS Web Infrastructure:</strong> Built a secure, scalable web infrastructure using AWS services.
+            </li>
         </ul>
 
         <h4>Achievements</h4>
@@ -224,6 +233,36 @@
             <p>© Swaraj Mishra | Contact: <a href="mailto:mswaraj46@gmail.com">mswaraj46@gmail.com</a></p>
         </footer>
     </div>
+
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function (e) {
+            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) {
+                return false;
+            }
+        };
+
+        let devTools = false;
+        let timer = null;
+
+        function detectDevTools() {
+            if (timer) clearTimeout(timer);
+            timer = setTimeout(function () {
+                if (!devTools) {
+                    // Developer tools are closed 
+                } else {
+                    // Developer tools are open 
+                    // You can redirect the user or display a message 
+                    window.location.href = 'https://example.com/blocked';
+                }
+            }, 100);
+        }
+
+        window.addEventListener('resize', detectDevTools); 
+    </script>
 
 </body>
 
